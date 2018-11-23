@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDCarInformationCtr">
+            <connections>
+                <outlet property="btn_used" destination="4sL-nP-8ZW" id="xan-GH-yVF"/>
+                <outlet property="footerView" destination="24x-EC-42h" id="XRL-dk-XrA"/>
+                <outlet property="headView" destination="FLP-Tm-IES" id="bt3-Ff-WMn"/>
+                <outlet property="lb_carNumber" destination="jQ2-ze-0DF" id="H7J-Vw-dyJ"/>
+                <outlet property="lb_title" destination="hwM-iS-OCu" id="wH2-nD-MOT"/>
+                <outlet property="scv_banner" destination="0iK-h3-5aI" id="GZo-ca-8Nu"/>
+                <outlet property="scv_licenc" destination="nav-75-VMa" id="23L-KW-3Yg"/>
+                <outlet property="tbv" destination="ior-mh-N8v" id="JCM-Gb-ZeA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ior-mh-N8v">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xPZ-rI-6VA"/>
+                        <outlet property="delegate" destination="-1" id="TCa-fJ-4t3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ior-mh-N8v" secondAttribute="bottom" id="66b-YW-hMU"/>
+                <constraint firstAttribute="trailing" secondItem="ior-mh-N8v" secondAttribute="trailing" id="C1f-uM-8ai"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c7U-4D-fI5"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pmv-dB-TAX"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="FLP-Tm-IES">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0iK-h3-5aI" customClass="HD3DScrollView">
+                    <rect key="frame" x="20" y="18" width="335" height="189.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0iK-h3-5aI" secondAttribute="height" multiplier="340:192" id="XHr-fg-fYa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="J4q-wj-cXv"/>
+                    </connections>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx7-if-gxs">
+                    <rect key="frame" x="321" y="83" width="34" height="60"/>
+                    <state key="normal" backgroundImage="car_right"/>
+                    <connections>
+                        <action selector="doLoadNextBanner:" destination="-1" eventType="touchUpInside" id="Nax-a9-QwB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014款 大众速腾 1.6手自一体舒适型 改款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwM-iS-OCu">
+                    <rect key="frame" x="18" y="225.5" width="339" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="nSJ-qR-pYP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="闽AD888H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-ze-0DF">
+                    <rect key="frame" x="18" y="260" width="90" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Hba-BN-cE2"/>
+                        <constraint firstAttribute="height" constant="20" id="qu6-rF-8ZD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sL-nP-8ZW">
+                    <rect key="frame" x="309" y="261.5" width="48" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="HsH-oZ-obG"/>
+                        <constraint firstAttribute="width" constant="48" id="JWy-ok-gOC"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="car_unused"/>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYs-Gu-8i5">
+                    <rect key="frame" x="20" y="83" width="34" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="LPN-W8-02E"/>
+                        <constraint firstAttribute="height" constant="60" id="guG-Cz-xgH"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="car_left"/>
+                    <connections>
+                        <action selector="doLoadNextBanner:" destination="-1" eventType="touchUpInside" id="A5s-cB-d76"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jx7-if-gxs" firstAttribute="height" secondItem="BYs-Gu-8i5" secondAttribute="height" id="15u-cd-Lnl"/>
+                <constraint firstItem="0iK-h3-5aI" firstAttribute="leading" secondItem="FLP-Tm-IES" secondAttribute="leading" constant="20" id="8Za-16-DQp"/>
+                <constraint firstItem="0iK-h3-5aI" firstAttribute="top" secondItem="FLP-Tm-IES" secondAttribute="top" constant="18" id="Ice-Sl-hNC"/>
+                <constraint firstItem="BYs-Gu-8i5" firstAttribute="centerY" secondItem="0iK-h3-5aI" secondAttribute="centerY" id="S1Y-Lx-oC5"/>
+                <constraint firstItem="jx7-if-gxs" firstAttribute="trailing" secondItem="0iK-h3-5aI" secondAttribute="trailing" id="UPd-QM-rag"/>
+                <constraint firstItem="jx7-if-gxs" firstAttribute="centerY" secondItem="0iK-h3-5aI" secondAttribute="centerY" id="YYk-19-omi"/>
+                <constraint firstItem="jQ2-ze-0DF" firstAttribute="top" secondItem="hwM-iS-OCu" secondAttribute="bottom" constant="15" id="gYU-Ew-umW"/>
+                <constraint firstItem="hwM-iS-OCu" firstAttribute="top" secondItem="0iK-h3-5aI" secondAttribute="bottom" constant="18" id="h5b-sQ-jkl"/>
+                <constraint firstItem="hwM-iS-OCu" firstAttribute="leading" secondItem="FLP-Tm-IES" secondAttribute="leading" constant="18" id="jOh-3H-3X0"/>
+                <constraint firstItem="jQ2-ze-0DF" firstAttribute="leading" secondItem="hwM-iS-OCu" secondAttribute="leading" id="m9l-hw-104"/>
+                <constraint firstAttribute="trailing" secondItem="0iK-h3-5aI" secondAttribute="trailing" constant="20" id="q4u-dL-JPw"/>
+                <constraint firstItem="4sL-nP-8ZW" firstAttribute="centerY" secondItem="jQ2-ze-0DF" secondAttribute="centerY" id="si7-t1-s3u"/>
+                <constraint firstAttribute="trailing" secondItem="hwM-iS-OCu" secondAttribute="trailing" constant="18" id="u0A-Om-jcb"/>
+                <constraint firstItem="BYs-Gu-8i5" firstAttribute="leading" secondItem="0iK-h3-5aI" secondAttribute="leading" id="zNw-uc-5Xr"/>
+                <constraint firstAttribute="trailing" secondItem="4sL-nP-8ZW" secondAttribute="trailing" constant="18" id="zkR-vs-eXd"/>
+                <constraint firstItem="jx7-if-gxs" firstAttribute="width" secondItem="BYs-Gu-8i5" secondAttribute="width" id="zya-LH-lrc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dYn-LO-wye"/>
+            <point key="canvasLocation" x="54.5" y="-466.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="24x-EC-42h">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nav-75-VMa" customClass="HD3DScrollView">
+                    <rect key="frame" x="20" y="26" width="335" height="189.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nav-75-VMa" secondAttribute="height" multiplier="340:192" id="wwu-x5-y7x"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zmf-Ox-Ms7"/>
+                    </connections>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKh-uJ-Wsz">
+                    <rect key="frame" x="321" y="91" width="34" height="60"/>
+                    <state key="normal" backgroundImage="car_right"/>
+                    <connections>
+                        <action selector="doLoadNextLicence:" destination="-1" eventType="touchUpInside" id="o7O-Pw-Gf2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDh-RU-OYE">
+                    <rect key="frame" x="20" y="91" width="34" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0GK-H2-VrO"/>
+                        <constraint firstAttribute="width" constant="34" id="v0f-Mu-ZL0"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="car_left"/>
+                    <connections>
+                        <action selector="doLoadNextLicence:" destination="-1" eventType="touchUpInside" id="H2k-hC-FWK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="nav-75-VMa" firstAttribute="top" secondItem="24x-EC-42h" secondAttribute="top" constant="26" id="5kc-eM-zmG"/>
+                <constraint firstItem="xKh-uJ-Wsz" firstAttribute="centerY" secondItem="nav-75-VMa" secondAttribute="centerY" id="Hvf-Xu-XBR"/>
+                <constraint firstItem="cDh-RU-OYE" firstAttribute="leading" secondItem="nav-75-VMa" secondAttribute="leading" id="JL0-Nz-vuC"/>
+                <constraint firstItem="nav-75-VMa" firstAttribute="leading" secondItem="24x-EC-42h" secondAttribute="leading" constant="20" id="KTC-uw-1qN"/>
+                <constraint firstItem="xKh-uJ-Wsz" firstAttribute="width" secondItem="cDh-RU-OYE" secondAttribute="width" id="S6O-kX-o6y"/>
+                <constraint firstItem="xKh-uJ-Wsz" firstAttribute="height" secondItem="cDh-RU-OYE" secondAttribute="height" id="T6e-VX-2iP"/>
+                <constraint firstAttribute="trailing" secondItem="nav-75-VMa" secondAttribute="trailing" constant="20" id="Vkr-uY-IM1"/>
+                <constraint firstItem="xKh-uJ-Wsz" firstAttribute="trailing" secondItem="nav-75-VMa" secondAttribute="trailing" id="fIp-xe-oTp"/>
+                <constraint firstItem="cDh-RU-OYE" firstAttribute="centerY" secondItem="nav-75-VMa" secondAttribute="centerY" id="yat-Xh-qyi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="x01-0l-dc8"/>
+            <point key="canvasLocation" x="-42.5" y="-125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="car_left" width="51" height="90"/>
+        <image name="car_right" width="51" height="90"/>
+        <image name="car_unused" width="48" height="17"/>
+    </resources>
+</document>

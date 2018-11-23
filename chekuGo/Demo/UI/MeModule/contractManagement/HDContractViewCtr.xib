@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDContractViewCtr">
+            <connections>
+                <outlet property="tbv" destination="ior-mh-N8v" id="JCM-Gb-ZeA"/>
+                <outlet property="tfSearch" destination="LyB-lD-7Ll" id="EsU-Jl-OQw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ior-mh-N8v">
+                    <rect key="frame" x="5" y="75" width="365" height="592"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xPZ-rI-6VA"/>
+                        <outlet property="delegate" destination="-1" id="TCa-fJ-4t3"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wM-W1-2Vo">
+                    <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍 请输入关键字搜索" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-lD-7Ll">
+                            <rect key="frame" x="20" y="10" width="335" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Rt8-QH-Lq9"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="N0t-Lm-8jP"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88483756199999997" green="0.89359832989999999" blue="0.89359832989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LyB-lD-7Ll" secondAttribute="trailing" constant="20" id="Alk-Gi-lAw"/>
+                        <constraint firstItem="LyB-lD-7Ll" firstAttribute="leading" secondItem="3wM-W1-2Vo" secondAttribute="leading" constant="20" id="Veo-eC-WeN"/>
+                        <constraint firstItem="LyB-lD-7Ll" firstAttribute="centerY" secondItem="3wM-W1-2Vo" secondAttribute="centerY" id="xKr-ka-r4M"/>
+                        <constraint firstAttribute="height" constant="60" id="xsV-oj-Gh6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3wM-W1-2Vo" firstAttribute="leading" secondItem="qWm-hG-24a" secondAttribute="leading" id="1d2-z2-jYo"/>
+                <constraint firstItem="qWm-hG-24a" firstAttribute="bottom" secondItem="ior-mh-N8v" secondAttribute="bottom" id="3cX-nL-8XB"/>
+                <constraint firstAttribute="trailing" secondItem="ior-mh-N8v" secondAttribute="trailing" constant="5" id="C1f-uM-8ai"/>
+                <constraint firstItem="3wM-W1-2Vo" firstAttribute="top" secondItem="qWm-hG-24a" secondAttribute="top" id="KB2-Oj-BlI"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="c7U-4D-fI5"/>
+                <constraint firstItem="qWm-hG-24a" firstAttribute="trailing" secondItem="3wM-W1-2Vo" secondAttribute="trailing" id="fH1-rj-dju"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="top" secondItem="qWm-hG-24a" secondAttribute="top" constant="55" id="gcj-t9-vgy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="qWm-hG-24a"/>
+            <point key="canvasLocation" x="33.5" y="105.5"/>
+        </view>
+    </objects>
+</document>

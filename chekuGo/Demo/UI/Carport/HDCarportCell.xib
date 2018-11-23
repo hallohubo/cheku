@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HDCarportCell" rowHeight="117" id="KGk-i7-Jjw" customClass="HDCarportCell">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad" translatesAutoresizingMaskIntoConstraints="NO" id="6tr-Rs-edV">
+                        <rect key="frame" x="14" y="9" width="118" height="89"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="Aoy-gf-ebX"/>
+                            <constraint firstAttribute="height" constant="89" id="uI2-9w-58V"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="2010款 君越 2.4舒适版2.4L" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8G-93-akc">
+                        <rect key="frame" x="139" y="4" width="217" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="N1S-f6-rMZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vml-S3-Ohb">
+                        <rect key="frame" x="142" y="70" width="100" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="2cg-SB-gS1"/>
+                            <constraint firstAttribute="width" constant="100" id="ubL-Of-Bxw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="闽AD876H">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfk-EO-qXt">
+                        <rect key="frame" x="312" y="75.5" width="48" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="32Z-ye-8oJ"/>
+                            <constraint firstAttribute="width" constant="48" id="nYA-Uu-2DY"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="car_unused"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vml-S3-Ohb" firstAttribute="leading" secondItem="6tr-Rs-edV" secondAttribute="trailing" constant="10" id="EwE-7s-SG5"/>
+                    <constraint firstItem="X8G-93-akc" firstAttribute="leading" secondItem="6tr-Rs-edV" secondAttribute="trailing" constant="7" id="Fz2-IR-lyc"/>
+                    <constraint firstItem="lfk-EO-qXt" firstAttribute="centerY" secondItem="Vml-S3-Ohb" secondAttribute="centerY" id="Pbe-SK-7Y0"/>
+                    <constraint firstAttribute="trailing" secondItem="lfk-EO-qXt" secondAttribute="trailing" constant="10" id="Vh7-cR-fTT"/>
+                    <constraint firstAttribute="trailing" secondItem="X8G-93-akc" secondAttribute="trailing" constant="14" id="WAm-V0-euv"/>
+                    <constraint firstItem="X8G-93-akc" firstAttribute="top" secondItem="6tr-Rs-edV" secondAttribute="top" constant="-5" id="XQQ-EW-fIx"/>
+                    <constraint firstItem="6tr-Rs-edV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZEg-Ct-P3m"/>
+                    <constraint firstItem="6tr-Rs-edV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="dvl-If-BTF"/>
+                    <constraint firstItem="Vml-S3-Ohb" firstAttribute="bottom" secondItem="6tr-Rs-edV" secondAttribute="bottom" id="hY5-ms-HmJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_carNumber" destination="Vml-S3-Ohb" id="6kf-IM-h9g"/>
+                <outlet property="btn_carStatus" destination="lfk-EO-qXt" id="z5G-4J-Z4I"/>
+                <outlet property="imv" destination="6tr-Rs-edV" id="b04-Ln-b1P"/>
+                <outlet property="tv_title" destination="X8G-93-akc" id="7R8-bz-Ljh"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ad" width="375" height="137"/>
+        <image name="car_unused" width="48" height="17"/>
+    </resources>
+</document>

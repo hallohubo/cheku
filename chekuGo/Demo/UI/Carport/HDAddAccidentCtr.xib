@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDAddAccidentCtr">
+            <connections>
+                <outlet property="btn0" destination="rPj-x4-bpK" id="yU6-3r-Wf0"/>
+                <outlet property="btn1" destination="AKR-db-nZP" id="1ub-1w-g8d"/>
+                <outlet property="btn10" destination="Vd6-c5-gaN" id="pc7-ke-zVJ"/>
+                <outlet property="btn11" destination="4Yn-m5-IDf" id="UM0-dg-fKQ"/>
+                <outlet property="btn12" destination="3pr-b3-CMw" id="TBA-gt-JCs"/>
+                <outlet property="btn13" destination="zrO-i6-4fx" id="cBI-r1-HfG"/>
+                <outlet property="btn14" destination="pRJ-D7-ABv" id="FZd-9f-7lg"/>
+                <outlet property="btn15" destination="EKd-wP-HLX" id="pjR-b0-Egl"/>
+                <outlet property="btn16" destination="o3q-h9-Gbj" id="2SF-rr-sY6"/>
+                <outlet property="btn17" destination="Qib-nq-XvD" id="Q2q-sF-Pup"/>
+                <outlet property="btn2" destination="VFV-nT-FzC" id="F36-db-QRO"/>
+                <outlet property="btn3" destination="Vup-v6-kFu" id="w4J-j9-AfW"/>
+                <outlet property="btn4" destination="oJg-jA-nPS" id="4ob-32-8Cd"/>
+                <outlet property="btn5" destination="zlY-Q9-Li1" id="bnh-KT-dPB"/>
+                <outlet property="btn6" destination="1hh-yq-ok3" id="uuc-ac-TvS"/>
+                <outlet property="btn7" destination="IcK-Vc-4Iz" id="8du-st-mSK"/>
+                <outlet property="btn8" destination="mSD-gE-bDt" id="47P-Sf-4xR"/>
+                <outlet property="btn9" destination="dqf-nW-66r" id="ZFf-lu-Yh9"/>
+                <outlet property="btn_addAccidentImage" destination="Y8X-jU-yYM" id="Wn9-7Z-UlW"/>
+                <outlet property="btn_addBill" destination="2eh-xt-c3H" id="6Np-Fz-76O"/>
+                <outlet property="btn_save" destination="uYO-qD-Pco" id="hKZ-8l-orf"/>
+                <outlet property="footerView" destination="JU2-fc-uZb" id="Pl9-VU-UNB"/>
+                <outlet property="lb_chooseAccidentBlock" destination="gzJ-ZI-RvO" id="nxI-Da-ltc"/>
+                <outlet property="lc_addAccidentBtnLeading" destination="PDJ-CI-Bfy" id="Nbk-aP-JWj"/>
+                <outlet property="lc_addAccidentBtnTop" destination="Ogc-9i-1do" id="zZe-rE-z8F"/>
+                <outlet property="lc_addBillBtnLeading" destination="zex-Cd-te2" id="Moi-PR-GdA"/>
+                <outlet property="lc_addBillBtnTop" destination="sHN-Bn-x8O" id="1lw-kX-56v"/>
+                <outlet property="lc_pickerBottom" destination="jK4-en-S9i" id="KLF-pa-jRw"/>
+                <outlet property="picker" destination="veT-Lh-kqg" id="WjR-JU-MGu"/>
+                <outlet property="tbv" destination="ior-mh-N8v" id="JCM-Gb-ZeA"/>
+                <outlet property="tv_remark" destination="nAp-bC-nA9" id="Q3O-0k-UvN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ior-mh-N8v" customClass="HDTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xPZ-rI-6VA"/>
+                        <outlet property="delegate" destination="-1" id="TCa-fJ-4t3"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOW-7U-LSa">
+                    <rect key="frame" x="0.0" y="457" width="375" height="210"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="veT-Lh-kqg">
+                            <rect key="frame" x="0.0" y="50" width="375" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="joN-UW-tZM"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="rlF-xd-bLa"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="539312323.11977005">
+                                <!--2018-02-03 00:58:43 +0000-->
+                            </date>
+                            <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                <!--1970-01-01 11:00:00 +0000-->
+                            </date>
+                            <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                <!--2037-12-31 11:00:00 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="datepickerValueChanged:" destination="-1" eventType="valueChanged" id="es2-cg-neF"/>
+                            </connections>
+                        </datePicker>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-nJ-gwl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cB-Pw-wqs">
+                                    <rect key="frame" x="10" y="5" width="60" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="sgz-9d-m6r"/>
+                                        <constraint firstAttribute="width" constant="60" id="x0G-VI-eVP"/>
+                                    </constraints>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" red="0.16289299730000001" green="0.61910277609999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doPickerButtonAction:" destination="-1" eventType="touchUpInside" id="Lxi-Ry-Nya"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjZ-Iw-Vl8">
+                                    <rect key="frame" x="305" y="5" width="60" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="5XL-Jb-B13"/>
+                                        <constraint firstAttribute="height" constant="40" id="XA0-YP-i3p"/>
+                                    </constraints>
+                                    <state key="normal" title="确定">
+                                        <color key="titleColor" red="0.16289299730000001" green="0.61910277609999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doPickerButtonAction:" destination="-1" eventType="touchUpInside" id="w10-bC-Fl1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.88483756199999997" green="0.89359832989999999" blue="0.89359832989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="2cB-Pw-wqs" firstAttribute="leading" secondItem="2Wd-nJ-gwl" secondAttribute="leading" constant="10" id="09R-lS-POF"/>
+                                <constraint firstItem="YjZ-Iw-Vl8" firstAttribute="centerY" secondItem="2Wd-nJ-gwl" secondAttribute="centerY" id="Vso-o8-rfb"/>
+                                <constraint firstAttribute="height" constant="50" id="fnL-aW-0XM"/>
+                                <constraint firstAttribute="trailing" secondItem="YjZ-Iw-Vl8" secondAttribute="trailing" constant="10" id="gfL-7i-KU0"/>
+                                <constraint firstItem="2cB-Pw-wqs" firstAttribute="centerY" secondItem="2Wd-nJ-gwl" secondAttribute="centerY" id="rca-SC-TSx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="veT-Lh-kqg" secondAttribute="bottom" id="TPI-lU-lmM"/>
+                        <constraint firstAttribute="trailing" secondItem="veT-Lh-kqg" secondAttribute="trailing" id="d9v-9C-QG9"/>
+                        <constraint firstItem="veT-Lh-kqg" firstAttribute="leading" secondItem="gOW-7U-LSa" secondAttribute="leading" id="hW3-Td-Qec"/>
+                        <constraint firstAttribute="height" constant="210" id="jLc-Ys-dvu"/>
+                        <constraint firstItem="2Wd-nJ-gwl" firstAttribute="leading" secondItem="gOW-7U-LSa" secondAttribute="leading" id="ji5-P7-QkS"/>
+                        <constraint firstAttribute="trailing" secondItem="2Wd-nJ-gwl" secondAttribute="trailing" id="mNP-YH-qMp"/>
+                        <constraint firstItem="2Wd-nJ-gwl" firstAttribute="top" secondItem="gOW-7U-LSa" secondAttribute="top" id="qMb-qT-rZT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ior-mh-N8v" secondAttribute="bottom" id="66b-YW-hMU"/>
+                <constraint firstAttribute="trailing" secondItem="ior-mh-N8v" secondAttribute="trailing" id="C1f-uM-8ai"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c7U-4D-fI5"/>
+                <constraint firstAttribute="bottom" secondItem="gOW-7U-LSa" secondAttribute="bottom" id="jK4-en-S9i"/>
+                <constraint firstAttribute="trailing" secondItem="gOW-7U-LSa" secondAttribute="trailing" id="k98-Cw-LJM"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pmv-dB-TAX"/>
+                <constraint firstItem="gOW-7U-LSa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yiV-cK-bZm"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="JU2-fc-uZb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAF-Bt-ePX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="990"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-xt-c3H">
+                            <rect key="frame" x="10" y="70" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="3nH-Tk-Bcf"/>
+                                <constraint firstAttribute="width" constant="100" id="PZx-OJ-KcC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="┼">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doAddBillImage:" destination="-1" eventType="touchUpInside" id="Wz3-UZ-6FP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="理赔单据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ue-yx-C5F">
+                            <rect key="frame" x="10" y="30" width="335" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="bIK-8C-doY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8X-jU-yYM">
+                            <rect key="frame" x="10" y="230" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="qdj-Sw-m96"/>
+                                <constraint firstAttribute="height" constant="100" id="w92-ZQ-Pbx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <state key="normal" title="┼">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="doAddAccidentImage:" destination="-1" eventType="touchUpInside" id="XxU-I0-FNw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事故照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-bM-2gX">
+                            <rect key="frame" x="10" y="190" width="355" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="tdx-kl-yOf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzc-x6-PBD" userLabel="line">
+                            <rect key="frame" x="10" y="350" width="355" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="OzR-wN-YCs"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（点击选择车辆解剖模块）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBk-Qh-ELS">
+                            <rect key="frame" x="10" y="841" width="355" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Hxv-WC-wvI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.8862745098" green="0.29411764709999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选择" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ss-Qv-sAl">
+                            <rect key="frame" x="142.5" y="361" width="90" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="3cs-Bx-JKv"/>
+                                <constraint firstAttribute="height" constant="20" id="fC6-RU-ot8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uui-Yu-QEL" userLabel="line">
+                            <rect key="frame" x="10" y="869" width="355" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="BW6-0V-oXZ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0L-0a-zKD">
+                            <rect key="frame" x="10" y="890" width="355" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="ytR-yn-svT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-0p-pmB" userLabel="line">
+                            <rect key="frame" x="10" y="990" width="355" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="N8h-VM-yAa"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nAp-bC-nA9">
+                            <rect key="frame" x="10" y="920" width="355" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="UkG-Rb-pXA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="27P-Mt-SgL"/>
+                            </connections>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyz-Ly-ppt">
+                            <rect key="frame" x="37.5" y="411" width="300" height="420"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="6WX-A7-BMJ">
+                                    <rect key="frame" x="-0.5" y="0.0" width="300" height="420"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="300" id="Wtp-Lv-Uqh"/>
+                                        <constraint firstAttribute="height" constant="420" id="bos-ql-QHB"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IcK-Vc-4Iz">
+                                    <rect key="frame" x="132.5" y="102.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="ErX-G5-z7T"/>
+                                        <constraint firstAttribute="width" secondItem="IcK-Vc-4Iz" secondAttribute="height" multiplier="1:1" id="RJD-lY-swT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="引擎盖" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="P2F-7P-uac"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-nW-66r">
+                                    <rect key="frame" x="132.5" y="207.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="dqf-nW-66r" secondAttribute="height" multiplier="1:1" id="PeD-Uz-dFZ"/>
+                                        <constraint firstAttribute="width" constant="35" id="j7T-lS-xSh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="顶盖" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="ro8-nW-nvX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mSD-gE-bDt">
+                                    <rect key="frame" x="133" y="149.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="ial-zO-Dca"/>
+                                        <constraint firstAttribute="width" secondItem="mSD-gE-bDt" secondAttribute="height" multiplier="1:1" id="j2R-8J-rOT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="前挡玻璃" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="5bd-O7-Gmb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vd6-c5-gaN">
+                                    <rect key="frame" x="132.5" y="272.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Vd6-c5-gaN" secondAttribute="height" multiplier="1:1" id="80J-bP-Oxw"/>
+                                        <constraint firstAttribute="width" constant="35" id="o3P-af-6QM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="后挡玻璃" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="HUb-jX-wGR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="AKR-db-nZP">
+                                    <rect key="frame" x="0.5" y="122.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="Ayg-cO-U8j"/>
+                                        <constraint firstAttribute="width" secondItem="AKR-db-nZP" secondAttribute="height" multiplier="1:1" id="nwT-3d-X1h"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="左前轮" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="jBe-Df-GMZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VFV-nT-FzC">
+                                    <rect key="frame" x="17" y="171" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="lSu-QX-0Cy"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="左前门" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="dkK-5T-iJN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zlY-Q9-Li1">
+                                    <rect key="frame" x="52" y="183" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="zlY-Q9-Li1" secondAttribute="height" multiplier="1:1" id="ZT6-6V-Bte"/>
+                                        <constraint firstAttribute="width" constant="35" id="ldS-hl-Tez"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="左前车窗" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="VxF-jf-PZd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-yq-ok3">
+                                    <rect key="frame" x="52" y="226" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="t0g-AY-l4k"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="左前车窗" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="IKz-5R-AUS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Vup-v6-kFu">
+                                    <rect key="frame" x="17.5" y="219.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="pn7-7e-cBQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="左后门" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="CsJ-yt-SvN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oJg-jA-nPS">
+                                    <rect key="frame" x="0.5" y="261.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="YRI-sJ-erW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="左后轮" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="gBP-ux-qay"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zrO-i6-4fx">
+                                    <rect key="frame" x="265.5" y="119.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="zrO-i6-4fx" secondAttribute="height" multiplier="1:1" id="HL9-qx-8OS"/>
+                                        <constraint firstAttribute="width" constant="35" id="XvX-AE-Rm3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="右前轮" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="e44-49-dyv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="o3q-h9-Gbj">
+                                    <rect key="frame" x="265.5" y="256.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="KnT-gH-iqA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="右后轮" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="xnj-dK-wbd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pRJ-D7-ABv">
+                                    <rect key="frame" x="250.5" y="171.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="gOg-oq-cPF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="右前门" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="1Ao-dU-XiY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EKd-wP-HLX">
+                                    <rect key="frame" x="250.5" y="217.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="bYd-DO-Rzn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="右后门" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="PFT-4r-w89"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3pr-b3-CMw">
+                                    <rect key="frame" x="215.5" y="219.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="KAc-Xw-XrD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="右后车窗" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="sTA-MO-Fis"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4Yn-m5-IDf">
+                                    <rect key="frame" x="215.5" y="178.5" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="SFc-vX-JbX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                    <state key="normal" title="右前车窗" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="sMf-An-Tes"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-nq-XvD">
+                                    <rect key="frame" x="135.5" y="373.5" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="mEx-iN-c3O"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <state key="normal" title="后保险杠" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="add-lH-Xh7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rPj-x4-bpK">
+                                    <rect key="frame" x="135" y="17" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="QRK-Cd-qDL"/>
+                                        <constraint firstAttribute="width" secondItem="rPj-x4-bpK" secondAttribute="height" multiplier="1:1" id="vFs-AJ-OlU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <state key="normal" title="前保险杠" backgroundImage="car_AccidentSelect">
+                                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="car_AccidentSelected">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doChooseCarAccidentBlock:" destination="-1" eventType="touchUpInside" id="RXo-lr-zUM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rPj-x4-bpK" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="1dn-Zn-Trd"/>
+                                <constraint firstItem="IcK-Vc-4Iz" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="4Uf-Bw-AMI"/>
+                                <constraint firstItem="3pr-b3-CMw" firstAttribute="width" secondItem="3pr-b3-CMw" secondAttribute="height" multiplier="1:1" id="5GV-1g-HxP"/>
+                                <constraint firstItem="1hh-yq-ok3" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="-80.5" id="8Gv-eY-rwT"/>
+                                <constraint firstItem="Qib-nq-XvD" firstAttribute="width" secondItem="Qib-nq-XvD" secondAttribute="height" multiplier="1:1" id="8WJ-ZE-siW"/>
+                                <constraint firstItem="o3q-h9-Gbj" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="133" id="8jh-hc-lfQ"/>
+                                <constraint firstItem="Qib-nq-XvD" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="8qI-eQ-dYH"/>
+                                <constraint firstItem="Vup-v6-kFu" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="27.5" id="A1P-rW-Kg1"/>
+                                <constraint firstItem="4Yn-m5-IDf" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-14" id="BZV-Yy-bpB"/>
+                                <constraint firstItem="EKd-wP-HLX" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="118" id="Cps-9O-vUp"/>
+                                <constraint firstItem="oJg-jA-nPS" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="-132.5" id="DYu-81-lY7"/>
+                                <constraint firstItem="mSD-gE-bDt" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="Dfw-dy-UC8"/>
+                                <constraint firstItem="AKR-db-nZP" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="-132" id="E7X-NX-cvX"/>
+                                <constraint firstItem="rPj-x4-bpK" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-178.5" id="EGS-1x-gZm"/>
+                                <constraint firstItem="6WX-A7-BMJ" firstAttribute="top" secondItem="lyz-Ly-ppt" secondAttribute="top" id="FRr-EM-KiC"/>
+                                <constraint firstItem="zrO-i6-4fx" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="133" id="IPi-rL-QRx"/>
+                                <constraint firstItem="Qib-nq-XvD" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="178.5" id="ISG-e0-h6t"/>
+                                <constraint firstItem="3pr-b3-CMw" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="26.5" id="K5q-Xp-jYn"/>
+                                <constraint firstAttribute="width" constant="300" id="KiP-5h-UzZ"/>
+                                <constraint firstItem="pRJ-D7-ABv" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="117.5" id="L3y-vk-hdQ"/>
+                                <constraint firstItem="rPj-x4-bpK" firstAttribute="width" secondItem="rPj-x4-bpK" secondAttribute="height" multiplier="1:1" id="N76-OU-Vuc"/>
+                                <constraint firstItem="zrO-i6-4fx" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-73" id="Naa-w4-SCC"/>
+                                <constraint firstItem="o3q-h9-Gbj" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="64" id="Nfr-5o-0UA"/>
+                                <constraint firstItem="Vup-v6-kFu" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="-115.5" id="Ou0-Oa-oiX"/>
+                                <constraint firstItem="oJg-jA-nPS" firstAttribute="width" secondItem="oJg-jA-nPS" secondAttribute="height" multiplier="1:1" id="PMh-qe-jZf"/>
+                                <constraint firstItem="IcK-Vc-4Iz" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-90" id="ShO-af-zFB"/>
+                                <constraint firstItem="1hh-yq-ok3" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="33.5" id="T53-XF-26h"/>
+                                <constraint firstItem="zlY-Q9-Li1" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-10" id="VDm-iR-WKz"/>
+                                <constraint firstAttribute="bottom" secondItem="6WX-A7-BMJ" secondAttribute="bottom" id="VT9-ZN-Di1"/>
+                                <constraint firstItem="Vd6-c5-gaN" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="VUw-FG-wIq"/>
+                                <constraint firstItem="6WX-A7-BMJ" firstAttribute="leading" secondItem="lyz-Ly-ppt" secondAttribute="leading" id="Wl3-ib-Usc"/>
+                                <constraint firstItem="Vup-v6-kFu" firstAttribute="width" secondItem="Vup-v6-kFu" secondAttribute="height" multiplier="1:1" id="YLc-xT-NL5"/>
+                                <constraint firstItem="oJg-jA-nPS" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="68.5" id="Zjf-Up-w26"/>
+                                <constraint firstAttribute="trailing" secondItem="6WX-A7-BMJ" secondAttribute="trailing" id="amK-0u-b0b"/>
+                                <constraint firstItem="EKd-wP-HLX" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="25" id="gYS-8e-wvg"/>
+                                <constraint firstItem="AKR-db-nZP" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-70" id="iox-t8-92e"/>
+                                <constraint firstItem="EKd-wP-HLX" firstAttribute="width" secondItem="EKd-wP-HLX" secondAttribute="height" multiplier="1:1" id="lFT-oC-Jiu"/>
+                                <constraint firstItem="dqf-nW-66r" firstAttribute="top" secondItem="IcK-Vc-4Iz" secondAttribute="bottom" constant="70" id="o1Z-nB-e0T"/>
+                                <constraint firstItem="Qib-nq-XvD" firstAttribute="width" secondItem="Qib-nq-XvD" secondAttribute="height" multiplier="1:1" id="p4M-Tc-vJp"/>
+                                <constraint firstItem="1hh-yq-ok3" firstAttribute="width" secondItem="1hh-yq-ok3" secondAttribute="height" multiplier="1:1" id="rGJ-CO-IgZ"/>
+                                <constraint firstItem="zrO-i6-4fx" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="133" id="sCU-6I-5bD"/>
+                                <constraint firstItem="VFV-nT-FzC" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="-116" id="sXY-le-ttW"/>
+                                <constraint firstItem="mSD-gE-bDt" firstAttribute="top" secondItem="IcK-Vc-4Iz" secondAttribute="bottom" constant="12" id="ujD-C7-QrY"/>
+                                <constraint firstAttribute="height" constant="420" id="uzM-Ij-BIE"/>
+                                <constraint firstItem="pRJ-D7-ABv" firstAttribute="width" secondItem="pRJ-D7-ABv" secondAttribute="height" multiplier="1:1" id="v9M-DY-tN9"/>
+                                <constraint firstItem="4Yn-m5-IDf" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="83" id="vYw-Gf-4FI"/>
+                                <constraint firstItem="o3q-h9-Gbj" firstAttribute="width" secondItem="o3q-h9-Gbj" secondAttribute="height" multiplier="1:1" id="vb3-vI-I2D"/>
+                                <constraint firstItem="4Yn-m5-IDf" firstAttribute="width" secondItem="4Yn-m5-IDf" secondAttribute="height" multiplier="1:1" id="vmK-6k-cQI"/>
+                                <constraint firstItem="Vd6-c5-gaN" firstAttribute="top" secondItem="dqf-nW-66r" secondAttribute="bottom" constant="30" id="vs7-jV-gnx"/>
+                                <constraint firstItem="pRJ-D7-ABv" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-21.5" id="w3j-RG-AaX"/>
+                                <constraint firstItem="IcK-Vc-4Iz" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="wCs-UW-Tlr"/>
+                                <constraint firstItem="VFV-nT-FzC" firstAttribute="width" secondItem="VFV-nT-FzC" secondAttribute="height" multiplier="1:1" id="wIq-8c-S2M"/>
+                                <constraint firstItem="dqf-nW-66r" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" id="xr1-VW-J3T"/>
+                                <constraint firstItem="zrO-i6-4fx" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-73" id="xtE-qx-WHm"/>
+                                <constraint firstItem="zlY-Q9-Li1" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="-81" id="yb2-Oa-gta"/>
+                                <constraint firstItem="VFV-nT-FzC" firstAttribute="centerY" secondItem="lyz-Ly-ppt" secondAttribute="centerY" constant="-22" id="zXf-sy-AQu"/>
+                                <constraint firstItem="3pr-b3-CMw" firstAttribute="centerX" secondItem="lyz-Ly-ppt" secondAttribute="centerX" constant="82.5" id="zcJ-Sh-6lU"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzJ-ZI-RvO">
+                            <rect key="frame" x="10" y="381" width="355" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="TM6-Na-sky"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.8862745098" green="0.29411764709999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6Ss-Qv-sAl" firstAttribute="centerX" secondItem="dAF-Bt-ePX" secondAttribute="centerX" id="6Nd-U0-zET"/>
+                        <constraint firstItem="4Yn-m5-IDf" firstAttribute="centerX" secondItem="dAF-Bt-ePX" secondAttribute="centerX" constant="83" id="8c1-Sz-Zzt"/>
+                        <constraint firstAttribute="trailing" secondItem="FJm-bM-2gX" secondAttribute="trailing" constant="10" id="8uC-M2-rpK"/>
+                        <constraint firstItem="Uj1-0p-pmB" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="DJk-of-yen"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ue-yx-C5F" secondAttribute="trailing" constant="30" id="DjW-nd-ga4"/>
+                        <constraint firstItem="gzJ-ZI-RvO" firstAttribute="top" secondItem="6Ss-Qv-sAl" secondAttribute="bottom" id="GyX-7L-dSc"/>
+                        <constraint firstItem="4Yn-m5-IDf" firstAttribute="centerY" secondItem="dAF-Bt-ePX" secondAttribute="centerY" constant="112" id="MF3-3v-9OB"/>
+                        <constraint firstItem="Y8X-jU-yYM" firstAttribute="top" secondItem="FJm-bM-2gX" secondAttribute="bottom" constant="20" id="Ogc-9i-1do"/>
+                        <constraint firstItem="Y8X-jU-yYM" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="PDJ-CI-Bfy"/>
+                        <constraint firstAttribute="trailing" secondItem="gzJ-ZI-RvO" secondAttribute="trailing" constant="10" id="Paz-7V-W2l"/>
+                        <constraint firstItem="uui-Yu-QEL" firstAttribute="top" secondItem="aBk-Qh-ELS" secondAttribute="bottom" constant="10" id="Qjn-eo-cun"/>
+                        <constraint firstItem="Vzc-x6-PBD" firstAttribute="top" secondItem="Y8X-jU-yYM" secondAttribute="bottom" constant="20" id="TP5-bf-cYt"/>
+                        <constraint firstAttribute="trailing" secondItem="aBk-Qh-ELS" secondAttribute="trailing" constant="10" id="U3M-eJ-xq1"/>
+                        <constraint firstAttribute="trailing" secondItem="Vzc-x6-PBD" secondAttribute="trailing" constant="10" id="XlD-co-EYp"/>
+                        <constraint firstAttribute="trailing" secondItem="e0L-0a-zKD" secondAttribute="trailing" constant="10" id="YIN-6s-yyY"/>
+                        <constraint firstItem="uui-Yu-QEL" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="Z8R-En-iGy"/>
+                        <constraint firstItem="lyz-Ly-ppt" firstAttribute="top" secondItem="gzJ-ZI-RvO" secondAttribute="bottom" constant="10" id="Zfb-v1-mKc"/>
+                        <constraint firstAttribute="trailing" secondItem="gzJ-ZI-RvO" secondAttribute="trailing" constant="10" id="anz-IV-d48"/>
+                        <constraint firstAttribute="trailing" secondItem="Uj1-0p-pmB" secondAttribute="trailing" constant="10" id="cdj-nN-L9K"/>
+                        <constraint firstItem="lyz-Ly-ppt" firstAttribute="centerX" secondItem="dAF-Bt-ePX" secondAttribute="centerX" id="eT2-Yv-60a"/>
+                        <constraint firstItem="FJm-bM-2gX" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="f9I-q7-VHK"/>
+                        <constraint firstAttribute="trailing" secondItem="nAp-bC-nA9" secondAttribute="trailing" constant="10" id="fkg-gX-d90"/>
+                        <constraint firstItem="nAp-bC-nA9" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="gJR-KA-kbv"/>
+                        <constraint firstItem="Vd6-c5-gaN" firstAttribute="centerX" secondItem="dAF-Bt-ePX" secondAttribute="centerX" id="gVc-hM-ng8"/>
+                        <constraint firstItem="6Ss-Qv-sAl" firstAttribute="top" secondItem="Vzc-x6-PBD" secondAttribute="bottom" constant="10" id="jBI-ez-LaW"/>
+                        <constraint firstAttribute="trailing" secondItem="uui-Yu-QEL" secondAttribute="trailing" constant="10" id="kAw-yO-Gi4"/>
+                        <constraint firstItem="aBk-Qh-ELS" firstAttribute="top" secondItem="lyz-Ly-ppt" secondAttribute="bottom" constant="10" id="q0H-eU-Okm"/>
+                        <constraint firstItem="1Ue-yx-C5F" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="s8V-Bn-dfZ"/>
+                        <constraint firstItem="e0L-0a-zKD" firstAttribute="top" secondItem="uui-Yu-QEL" secondAttribute="bottom" constant="20" id="s9t-Vi-3Cw"/>
+                        <constraint firstItem="2eh-xt-c3H" firstAttribute="top" secondItem="dAF-Bt-ePX" secondAttribute="top" constant="70" id="sHN-Bn-x8O"/>
+                        <constraint firstItem="Uj1-0p-pmB" firstAttribute="top" secondItem="nAp-bC-nA9" secondAttribute="bottom" constant="10" id="uAT-Ju-LAI"/>
+                        <constraint firstItem="gzJ-ZI-RvO" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="ukt-bY-rNq"/>
+                        <constraint firstItem="1Ue-yx-C5F" firstAttribute="top" secondItem="dAF-Bt-ePX" secondAttribute="top" constant="30" id="uwO-jb-NB3"/>
+                        <constraint firstItem="e0L-0a-zKD" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="vdR-OR-69m"/>
+                        <constraint firstItem="aBk-Qh-ELS" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="veI-lK-Ehi"/>
+                        <constraint firstItem="nAp-bC-nA9" firstAttribute="top" secondItem="e0L-0a-zKD" secondAttribute="bottom" constant="10" id="xb9-TN-BVy"/>
+                        <constraint firstItem="4Yn-m5-IDf" firstAttribute="width" secondItem="4Yn-m5-IDf" secondAttribute="height" multiplier="1:1" id="z97-SH-6ym"/>
+                        <constraint firstItem="FJm-bM-2gX" firstAttribute="top" secondItem="2eh-xt-c3H" secondAttribute="bottom" constant="20" id="zHY-NM-jvC"/>
+                        <constraint firstItem="2eh-xt-c3H" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="zex-Cd-te2"/>
+                        <constraint firstItem="Vzc-x6-PBD" firstAttribute="leading" secondItem="dAF-Bt-ePX" secondAttribute="leading" constant="10" id="zuh-RQ-uY6"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-qD-Pco">
+                    <rect key="frame" x="20" y="1020" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.8862745098" green="0.29411764709999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6TF-pb-x4f"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doSave:" destination="-1" eventType="touchUpInside" id="IAd-Ou-ME3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dAF-Bt-ePX" firstAttribute="leading" secondItem="JU2-fc-uZb" secondAttribute="leading" id="5AV-tN-yKv"/>
+                <constraint firstAttribute="trailing" secondItem="uYO-qD-Pco" secondAttribute="trailing" constant="20" id="AYM-KR-ecG"/>
+                <constraint firstAttribute="bottom" secondItem="uYO-qD-Pco" secondAttribute="bottom" constant="30" id="PIi-dy-fmJ"/>
+                <constraint firstItem="uYO-qD-Pco" firstAttribute="top" secondItem="dAF-Bt-ePX" secondAttribute="bottom" constant="30" id="Zoq-Ki-93T"/>
+                <constraint firstAttribute="trailing" secondItem="dAF-Bt-ePX" secondAttribute="trailing" id="nX0-be-Wxz"/>
+                <constraint firstItem="dAF-Bt-ePX" firstAttribute="top" secondItem="JU2-fc-uZb" secondAttribute="top" id="snK-i9-6iM"/>
+                <constraint firstItem="uYO-qD-Pco" firstAttribute="leading" secondItem="JU2-fc-uZb" secondAttribute="leading" constant="20" id="xhd-5M-jSG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-471.5" y="404"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="car" width="475" height="649"/>
+        <image name="car_AccidentSelect" width="54" height="54"/>
+        <image name="car_AccidentSelected" width="54" height="54"/>
+    </resources>
+</document>

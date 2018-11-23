@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HBWithdrawalDetailCtr">
+            <connections>
+                <outlet property="imvReturnReceipt" destination="bmU-4e-5wQ" id="OEr-hr-Ml3"/>
+                <outlet property="tbv" destination="ior-mh-N8v" id="JCM-Gb-ZeA"/>
+                <outlet property="vBottom" destination="SjB-Lf-fUk" id="gKU-Vf-dPa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ior-mh-N8v">
+                    <rect key="frame" x="10" y="0.0" width="355" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xPZ-rI-6VA"/>
+                        <outlet property="delegate" destination="-1" id="TCa-fJ-4t3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ior-mh-N8v" secondAttribute="bottom" id="66b-YW-hMU"/>
+                <constraint firstAttribute="trailing" secondItem="ior-mh-N8v" secondAttribute="trailing" constant="10" id="C1f-uM-8ai"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="c7U-4D-fI5"/>
+                <constraint firstItem="ior-mh-N8v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pmv-dB-TAX"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="SjB-Lf-fUk">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回执单据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujE-Ro-hZZ">
+                    <rect key="frame" x="10" y="10" width="349" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Qdf-jZ-SZ2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-4e-5wQ">
+                    <rect key="frame" x="10" y="36" width="349" height="200"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="XQU-rY-ahf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ujE-Ro-hZZ" firstAttribute="top" secondItem="SjB-Lf-fUk" secondAttribute="top" constant="10" id="DXj-9H-4Gj"/>
+                <constraint firstAttribute="trailing" secondItem="ujE-Ro-hZZ" secondAttribute="trailing" constant="10" id="Ijh-Tc-Mpp"/>
+                <constraint firstItem="bmU-4e-5wQ" firstAttribute="top" secondItem="ujE-Ro-hZZ" secondAttribute="bottom" constant="5" id="VMS-99-q8K"/>
+                <constraint firstAttribute="trailing" secondItem="bmU-4e-5wQ" secondAttribute="trailing" constant="10" id="aj3-pA-xAY"/>
+                <constraint firstItem="bmU-4e-5wQ" firstAttribute="leading" secondItem="SjB-Lf-fUk" secondAttribute="leading" constant="10" id="ly8-ZU-frc"/>
+                <constraint firstItem="ujE-Ro-hZZ" firstAttribute="leading" secondItem="SjB-Lf-fUk" secondAttribute="leading" constant="10" id="y9B-rz-ydW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="38.5" y="669.5"/>
+        </view>
+    </objects>
+</document>

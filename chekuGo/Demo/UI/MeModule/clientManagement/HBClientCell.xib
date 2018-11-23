@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HBClientCell" rowHeight="75" id="KGk-i7-Jjw" customClass="HBClientCell">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOv-hO-DRa">
+                        <rect key="frame" x="28" y="14.5" width="227" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合同数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kia-e9-8gZ">
+                        <rect key="frame" x="260" y="17.5" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Ftb-Gf-w98"/>
+                            <constraint firstAttribute="height" constant="20" id="fsQ-U0-fxd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13655027217" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1I-3Q-OOB">
+                        <rect key="frame" x="28" y="42.5" width="222" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="RDP-hQ-oh2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-Vp-6ob">
+                        <rect key="frame" x="255" y="42.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="hg8-Rl-X9P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.55696475933837108" blue="0.29781813734925933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImage" translatesAutoresizingMaskIntoConstraints="NO" id="XS8-MW-eaA">
+                        <rect key="frame" x="10" y="18" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="2aX-jU-vnp"/>
+                            <constraint firstAttribute="width" constant="13" id="bVJ-6m-78V"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneImage" translatesAutoresizingMaskIntoConstraints="NO" id="dIa-00-gvV">
+                        <rect key="frame" x="10" y="46" width="13" height="13"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="d1I-3Q-OOB" firstAttribute="top" secondItem="lOv-hO-DRa" secondAttribute="bottom" constant="8" id="3hg-dH-t5m"/>
+                    <constraint firstItem="6wU-Vp-6ob" firstAttribute="height" secondItem="d1I-3Q-OOB" secondAttribute="height" id="7wG-Es-s6l"/>
+                    <constraint firstItem="kia-e9-8gZ" firstAttribute="leading" secondItem="lOv-hO-DRa" secondAttribute="trailing" constant="5" id="EGN-eg-1Pb"/>
+                    <constraint firstItem="XS8-MW-eaA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Gdw-VA-gif"/>
+                    <constraint firstItem="kia-e9-8gZ" firstAttribute="centerX" secondItem="6wU-Vp-6ob" secondAttribute="centerX" id="L7N-rR-qDx"/>
+                    <constraint firstItem="d1I-3Q-OOB" firstAttribute="centerY" secondItem="dIa-00-gvV" secondAttribute="centerY" id="MBx-uV-Ags"/>
+                    <constraint firstAttribute="trailing" secondItem="kia-e9-8gZ" secondAttribute="trailing" constant="19" id="OCm-2r-FHU"/>
+                    <constraint firstItem="d1I-3Q-OOB" firstAttribute="leading" secondItem="dIa-00-gvV" secondAttribute="trailing" constant="5" id="T4g-yS-BJU"/>
+                    <constraint firstItem="lOv-hO-DRa" firstAttribute="centerY" secondItem="XS8-MW-eaA" secondAttribute="centerY" id="Teb-ri-RiT"/>
+                    <constraint firstItem="lOv-hO-DRa" firstAttribute="leading" secondItem="XS8-MW-eaA" secondAttribute="trailing" constant="5" id="WQd-Vj-mwh"/>
+                    <constraint firstItem="dIa-00-gvV" firstAttribute="height" secondItem="XS8-MW-eaA" secondAttribute="height" id="Zmz-8H-1x3"/>
+                    <constraint firstItem="6wU-Vp-6ob" firstAttribute="top" secondItem="kia-e9-8gZ" secondAttribute="bottom" constant="5" id="aN2-my-vkD"/>
+                    <constraint firstItem="6wU-Vp-6ob" firstAttribute="leading" secondItem="d1I-3Q-OOB" secondAttribute="trailing" constant="5" id="cBk-of-1HZ"/>
+                    <constraint firstItem="XS8-MW-eaA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cD5-BE-Z38"/>
+                    <constraint firstItem="dIa-00-gvV" firstAttribute="width" secondItem="XS8-MW-eaA" secondAttribute="width" id="cRa-qM-XuS"/>
+                    <constraint firstItem="kia-e9-8gZ" firstAttribute="top" secondItem="lOv-hO-DRa" secondAttribute="top" constant="3" id="iPk-hc-vfz"/>
+                    <constraint firstItem="dIa-00-gvV" firstAttribute="centerX" secondItem="XS8-MW-eaA" secondAttribute="centerX" id="iVv-Al-07C"/>
+                    <constraint firstItem="kia-e9-8gZ" firstAttribute="height" secondItem="lOv-hO-DRa" secondAttribute="height" id="ynG-oa-TkV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lb_contractCount" destination="6wU-Vp-6ob" id="4it-q4-FM0"/>
+                <outlet property="lb_name" destination="lOv-hO-DRa" id="bOb-dY-UEb"/>
+                <outlet property="lb_phone" destination="d1I-3Q-OOB" id="S32-ge-KVh"/>
+            </connections>
+            <point key="canvasLocation" x="16.5" y="86.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="headImage" width="19" height="19"/>
+        <image name="phoneImage" width="19" height="19"/>
+    </resources>
+</document>

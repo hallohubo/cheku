@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HDClientSexCell" rowHeight="97" id="UbZ-Ye-bvE" customClass="HDClientSexCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UbZ-Ye-bvE" id="CgI-x1-kcx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保单编号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0e-tB-Iht">
+                        <rect key="frame" x="10" y="25" width="300" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MBd-SU-kmO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxY-Yu-BKo">
+                        <rect key="frame" x="10" y="65" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="elt-r7-2qW"/>
+                            <constraint firstAttribute="height" constant="12" id="pNn-r2-qO1"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="car_sexSelect"/>
+                        <state key="selected" backgroundImage="car_sexSelected"/>
+                        <connections>
+                            <action selector="doChooseSex:" destination="UbZ-Ye-bvE" eventType="touchUpInside" id="kdI-TO-ajx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1R-3D-VOp">
+                        <rect key="frame" x="30" y="56" width="65" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4dj-Tr-4y1"/>
+                            <constraint firstAttribute="width" constant="65" id="8cS-ww-SeY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="男">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="doChooseSex:" destination="UbZ-Ye-bvE" eventType="touchUpInside" id="IxP-F7-DEg"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-92-cYf">
+                        <rect key="frame" x="125" y="65" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="40Z-WH-9OE"/>
+                            <constraint firstAttribute="height" constant="12" id="MKo-kg-VtB"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="car_sexSelect"/>
+                        <state key="selected" backgroundImage="car_sexSelected"/>
+                        <connections>
+                            <action selector="doChooseSex:" destination="UbZ-Ye-bvE" eventType="touchUpInside" id="7gA-bC-TW1"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSk-wq-Bzn">
+                        <rect key="frame" x="145" y="56" width="65" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="M2S-Yf-WPV"/>
+                            <constraint firstAttribute="width" constant="65" id="W3X-tz-7TC"/>
+                        </constraints>
+                        <state key="normal" title="女">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="doChooseSex:" destination="UbZ-Ye-bvE" eventType="touchUpInside" id="KQW-mc-xht"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M1R-3D-VOp" firstAttribute="leading" secondItem="xxY-Yu-BKo" secondAttribute="trailing" constant="8" id="0zN-TX-4we"/>
+                    <constraint firstItem="xxY-Yu-BKo" firstAttribute="top" secondItem="k0e-tB-Iht" secondAttribute="bottom" constant="20" id="6Ws-Tf-G4C"/>
+                    <constraint firstItem="k0e-tB-Iht" firstAttribute="top" secondItem="CgI-x1-kcx" secondAttribute="top" constant="25" id="7wN-9u-n37"/>
+                    <constraint firstItem="xxY-Yu-BKo" firstAttribute="leading" secondItem="CgI-x1-kcx" secondAttribute="leading" constant="10" id="N5i-Jg-Lr1"/>
+                    <constraint firstItem="M1R-3D-VOp" firstAttribute="centerY" secondItem="xxY-Yu-BKo" secondAttribute="centerY" id="NR2-jT-OQy"/>
+                    <constraint firstAttribute="trailing" secondItem="k0e-tB-Iht" secondAttribute="trailing" constant="10" id="OO5-De-qgv"/>
+                    <constraint firstItem="gSk-wq-Bzn" firstAttribute="leading" secondItem="VdT-92-cYf" secondAttribute="trailing" constant="8" id="T7d-xv-IJ9"/>
+                    <constraint firstItem="gSk-wq-Bzn" firstAttribute="centerY" secondItem="VdT-92-cYf" secondAttribute="centerY" id="XeA-pl-577"/>
+                    <constraint firstItem="VdT-92-cYf" firstAttribute="leading" secondItem="M1R-3D-VOp" secondAttribute="trailing" constant="30" id="gSA-ms-IyZ"/>
+                    <constraint firstItem="k0e-tB-Iht" firstAttribute="leading" secondItem="CgI-x1-kcx" secondAttribute="leading" constant="10" id="jWt-ui-vqr"/>
+                    <constraint firstItem="VdT-92-cYf" firstAttribute="centerY" secondItem="xxY-Yu-BKo" secondAttribute="centerY" id="vAa-zr-WQ5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Ct3-hG-knJ"/>
+            <connections>
+                <outlet property="btn0" destination="M1R-3D-VOp" id="WX2-2C-4Pb"/>
+                <outlet property="btn1" destination="gSk-wq-Bzn" id="XxT-87-LS0"/>
+                <outlet property="btn_femaleIcon" destination="VdT-92-cYf" id="esk-AN-s7A"/>
+                <outlet property="btn_maleIcon" destination="xxY-Yu-BKo" id="32G-hi-NOH"/>
+                <outlet property="lb_title" destination="k0e-tB-Iht" id="Ybi-zp-RUF"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="106.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car_sexSelect" width="13" height="13"/>
+        <image name="car_sexSelected" width="13" height="13"/>
+    </resources>
+</document>

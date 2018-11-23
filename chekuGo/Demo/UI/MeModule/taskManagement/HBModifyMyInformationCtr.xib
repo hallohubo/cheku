@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HBModifyMyInformationCtr">
+            <connections>
+                <outlet property="tf_" destination="A4n-UM-PLu" id="FII-KH-B2G"/>
+                <outlet property="view" destination="SPI-cy-9QO" id="pMM-Lu-3bx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SPI-cy-9QO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4n-UM-PLu">
+                    <rect key="frame" x="10" y="30" width="355" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ay6-eM-eiT"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zSF-iZ-EdR"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OK4-oL-qu4" firstAttribute="trailing" secondItem="A4n-UM-PLu" secondAttribute="trailing" constant="10" id="By6-35-Nw7"/>
+                <constraint firstItem="A4n-UM-PLu" firstAttribute="top" secondItem="OK4-oL-qu4" secondAttribute="top" constant="10" id="PXd-9T-Udt"/>
+                <constraint firstItem="A4n-UM-PLu" firstAttribute="leading" secondItem="OK4-oL-qu4" secondAttribute="leading" constant="10" id="z4T-j2-9kO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="OK4-oL-qu4"/>
+        </view>
+    </objects>
+</document>

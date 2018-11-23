@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[HDClientLicenseCtr tableView:cellForRowAtIndexPath:]:HDClientLicenseCtr.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(NSString *)self-&gt;model-&gt;_driveExpiryDate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HDClientLicenseCtr datepickerValueChanged:]:HDClientLicenseCtr.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

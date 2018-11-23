@@ -1,0 +1,28 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+#ifdef __OBJC__
+#define MAS_SHORTHAND
+
+#import <Availability.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "HDHelper.h"
+#import "HDInstance.h"
+#import "UIImage+alpha.h"
+#import "UIImage+Color.h"
+#import "UIView+LoadFromNib.h"
+#import "Masonry.h"
+#import "HDTableViewCell.h"
+#import "HDGlobal.h"
+#import "HDAppHelper.h"
+#import "HDHUD.h"
+#import "HDDateHelper.h"
+#import "HDRefresh.h"
+#import "HDStringHelper.h"
+#import "UIImageView+AFNetworking.h"
+#import "UIButton+AFNetworking.h"
+
+#endif
